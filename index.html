@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
+    <title>Sticker.js</title>
+
+    <style type="text/css">
+        body {
+            background-color: #222;
+        }
+
+        .sticker {
+            position: relative;
+            width: 340px;
+            height: 360px;
+            margin: 50px;
+          
+        }
+
+        .example-1 .sticker-img {
+            background-image: url(cutmypic.png);
+            margin-top: -1%;
+        }
+
+        .back {
+            font-size: 40px;
+            position: absolute;
+            margin-top: 60%;
+            margin-left: 20%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="sticker example-1">
+        <div class="back">Harshit Singh</div>
+    </div>
+
+    <div class="sticker example-1">
+        <div class="back">Harshit Singh</div>
+    </div>
+
+    <div class="sticker example-1">
+        <div class="back">Harshit Singh</div>
+    </div>
+
+    <div class="sticker example-1">
+        <div class="back">Harshit Singh</div>
+    </div>
+
+    <script src="sticker.min.js"></script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            Sticker.init('.sticker');
+        }
+    </script>
+</body>
+</html>
